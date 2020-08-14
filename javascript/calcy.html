@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pin code</title>
+  
+</head>
+
+<style>
+
+  div{
+    border:1px solid black;
+    width: 175px;
+    margin: auto;
+    padding: 11.6px;
+    border-radius: 10px;
+    background-color: rgb(241, 241, 239);
+    margin-top: 200px;
+  }
+
+  body{
+    text-align: center;
+  }
+
+  table{
+
+    border:1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    width: 177px;
+    padding: 10px;
+    background-color: rgb(241, 241, 239);
+    height: 200px;
+  }
+
+  input[type="button"]{
+
+    width:55px;
+    border-radius: 50px;
+    background-color: cornsilk;
+    height: 40px;
+  }
+  input[type="button"]:hover{
+                     box-shadow: 0 0 10px 5px rgb(241, 217, 110);
+                 }
+</style>
+<body id="bodi">
+
+  <div>
+
+    <input type="text" id="code" style="text-align: center; border-radius: 50px;height:30px">
+
+  </div>
+
+       <table id="tab" value="">
+
+            
+            <tr>
+                <th><input type="button" value="1" onclick="code.value+='1'"></th>
+                <th><input type="button" value="2" onclick="code.value+='2'"></th>
+                <th><input type="button" value="3" onclick="code.value+='3'"></th>   
+            </tr>
+            <tr>
+                <th><input type="button" value="4" onclick="code.value+='4'"></th>
+                <th><input type="button" value="5" onclick="code.value+='5'"></th>
+                <th><input type="button" value="6" onclick="code.value+='6'"></th>
+            </tr>
+
+            <tr>
+                <th><input type="button" value="7" onclick="code.value+='7'"></th>
+                <th><input type="button" value="8" onclick="code.value+='8'"></th>
+                <th><input type="button" value="9" onclick="code.value+='9'"></th>
+            </tr>
+
+            <tr>
+                <th><input type="button" value="C" id="clean"></th>
+                <th><input type="button" value="0" onclick="code.value+='0'"></th>
+                <th><input type="button" value="Ok" onclick="check()"></th>
+            </tr>
+
+            
+
+          </table>
+
+</body>
+<script src="demo.js"></script>
+</html>

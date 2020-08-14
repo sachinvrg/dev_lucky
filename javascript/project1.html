@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>time and date</title>
+    <style>
+
+        .Time{
+            border: 1px rgb(175, 193, 224);
+            padding: 30px;
+            background-color: rgb(175, 193, 224);
+            text-align: center;
+        }
+    </style>
+    <script>
+        let a;
+        let time;
+        let date;
+         setInterval(() => {
+             
+        a=new Date();
+        date = a.toLocaleDateString()
+        time = a.getHours()+":"+ a.getMinutes() +":"+ a.getSeconds();
+        document.getElementById('refresh').innerHTML= time + ' on ' + date;
+
+    }, 1000);
+    </script>
+</head>
+<body style="align-items: center;">
+    <div class="Time">
+
+        <h1 style="font-size: 30px; font-family: cursive; font-weight: bold;">Current time is:<span id='refresh'></span></h1>
+
+        <p style="font-size: 20px;font-family: cursive;">time and date according to countries</p>
+
+    </div>
+</body>
+</html>

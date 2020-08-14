@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color change</title>
+    <style>
+
+        div.form{
+            max-width: 100%;
+            border: 2px solid blue;
+            width:500px;
+            padding: 50px;
+            background-color:rgb(223, 215, 215);
+            border-radius: 20px;
+            max-width: 100%;
+            text-align: center;
+           
+            
+        }
+        input{
+            background-color:khaki;
+            border-left: solid blue;
+
+        }
+
+        div.over{
+            width:500px;
+            height: 300px;
+            overflow: auto;
+        }
+
+       div.sticky{
+           border: solid black;
+           position: -webkit-sticky;
+           position:sticky;
+           top: 0;
+           background-color: cornflowerblue;
+           border-style:dotted;
+       }
+
+        .red
+         {
+             background: red;
+              
+
+         }
+
+         .yellow
+         {
+             background: yellow; 
+             
+         }
+
+         .green
+         {
+             background: green;
+                  
+         }   
+
+          #firstEvent {
+            border: solid blue;
+             padding: 30px;
+             
+         }
+         
+         body{
+             background-image: url("../imgJS/cover4.jpg");
+             background-size: cover;
+             text-align: center;
+             max-width:100%;
+         }
+         
+         img{
+             border-radius: 100px;
+             max-width: 100%;
+             height: auto;
+             opacity: .5;
+         }
+
+         img:hover{
+             box-shadow: 0 0 12px 5px purple;
+             opacity: 1;
+         }
+
+
+         a:link{
+             color: purple;
+             font-size: 50px;
+         }
+
+
+         a:visited{
+             color: seagreen;
+         }
+
+
+         a:hover{
+             color: sienna;
+         }
+
+
+         table,tr,th{border:2px solid maroon;
+                 font-size: 20px;
+                 width: 50%;
+                 height: 100%;
+                 }
+
+
+         table:hover{
+                     box-shadow: 0 0 12px 5px tomato;
+                 }
+
+
+         tr:hover{
+                     background-color: thistle; color: green;
+
+                 } 
+                 
+          </style>
+
+    <script src="project.js">
+    </script>
+
+</head>
+
+<body>
+
+    <div class="sticky">
+        <p>this is to check sticky position</p>
+    </div>
+    <br><br><br><br>
+    
+    
+    <div class='chinu' id= 'firstEvent'>
+      <select id="selectid">
+             <option value="red">Red</option>
+             <option value="yellow">Yellow</option>
+             <option value="green">Green</option>
+      </select>
+      <button id="click" onclick="change()">Submit</button>
+    </div><br><br><br><br>
+
+    
+    <h1 id="myh1" style="color:grey;font-size: 50px;font-family: 'algerian', 'Arial Narrow', Arial, sans-serif;font-weight: bold;text-transform: uppercase;text-shadow: 2px 3px red;">Hey!</h1>
+    <p id="myp" style= "color:red;font-size: 30px;font-family: cursive;font-style: italic;font-weight: bold;text-transform: uppercase;text-shadow: 2px 3px blue;">This is testing page of CSS</p>
+    <br><br><br><br>
+ <center>
+    <img src="imgJS/cover3.jpg" width="800" height="500">
+    <br><br><br><br><br><br>
+        <a href="#">Click Here</a><br><br><br><br><br>
+ </center>
+ 
+ 
+ <center> 
+  <table>
+        <tr>
+            <th>Name</th>
+            <th>adress</th>
+        </tr>
+        <tr>
+            <th>Lucky</th>
+            <th>Indore</th>
+        </tr>
+        <tr>
+            <th>Swati</th>
+            <th>Dewas</th>
+        </tr>
+        
+    
+    </table><br><br><br><br><br><br><br>
+ </center>
+ <div class="over">
+     <p>Social media destroys people’s relationships, causes “Facebook envy,” reduces self-esteem, makes users feel lonely, and encourages arrogant and egotistical behavior. It also sells out its users, collecting their data so marketers can better target them, often for items they don’t need and—with a pandemic of credit card debt—can’t afford.
+
+        The culture nurtured on social media often results in bullying and suicide and generally brings out the worst in people.
+        
+        But what if it could be different?
+        
+        Like many of you, I also have experienced some of the side effects of social media, including losing friends, feeling my life wasn’t like others, social isolation, bragging way too much, saying things I would never say in person, making posts and tweets that no one responded to, and receiving unwarranted brutal criticism.
+        
+        At the time, I didn’t realize that it was social media that was bringing out the worst in many of my social interactions and making me feel awkward about my life. Once it clicked (during the 2016 election cycle, when the vitriol and hate came out in full force), I realized this form of socializing was doing more harm than good in terms of my self-image and relationships.
+        
+        It became clear that my connections on social media and I were hurting our self-esteem and wasting our precious time in front of a screen, using social media.
+        
+        So I quit most social media and reduced my usage dramatically.
+        
+        Not coincidentally, I had finished my doctorate in psychology about eight months prior. It was through these studies and later research that I began thinking about the problems that resulted in my social media exodus.
+        
+        The inventor of the World Wide Web, Sir Tim Berners-Lee, stated in 2017 that he fears nothing good will ever come out of the internet and that its future is in peril. While not talking specifically about social media, he wrote in a letter published to the World Wide Web Foundation, “I imagined the web as an open platform that would allow everyone, everywhere, to share information, access opportunities, and collaborate across geographic and cultural boundaries.”
+        
+        He went on to share that he was dismayed that it hasn’t become that.
+        
+        Psychologists worldwide have conducted numerous studies showing that, among other things, using popular social media results in envying others, negatively affects self-esteem, and increases the likelihood that you will say terrible things to others.
+        
+        Yet while many have identified the flaws of social media, in terms of how it negatively affects people, relationships, and careers, no one has really gone the next step to explain what the solutions are.</p>
+
+        <input type="radio" name="yes" value=" ">Accepted<br>
+        <input type="radio" name="no" value=" ">Not Accepted<br>
+        <button id="click">OK</button>
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br> <br><br>
+ <div class="form">
+        <lable for="mail">Email</label>
+        <input type="text" id="mail" name="mail">
+        <br>
+        <br>
+        <lable for="passw">Password</lable>
+        <input type="password" id="passw" name="passw">
+        <br>
+        <br><br>
+        <button id="click">Login</button>
+ </div> 
+
+
+ <script src="dom.js">
+</script>
+
+</body>
+</html>

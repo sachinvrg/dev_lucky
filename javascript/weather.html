@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./skycons-master/skycons.js"></script>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            text-align: center;
+            background-color: rgb(94, 243, 173);
+            font-family: cursive;
+            color: black;
+            margin-top:250px;
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .location,.temprature{
+            height:150px;
+            width: 50%;
+            justify-content: space-around;
+            display: flex;
+            align-items: center;
+        }
+        .temprature{
+            flex-direction: column;
+        }
+        .degree-section{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .degree-section span{
+            margin: 10px;
+            font-size: 30px;
+        
+        }
+        .degree-section h2{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="location">
+        <h1 class="location-city">Timezone</h1>
+        <canvas class="icon" width="128" height="128"></canvas>
+    </div>
+    <div class="temprature">
+        <div class="degree-section">
+        <h2 class="temprature-degree">34</h2>
+        <span>F</span>
+        </div>
+        <div class="temprature-description">its cold</div>
+    </div>
+
+   
+    <script src="weather.js"></script>
+    
+</body>
+</html>
