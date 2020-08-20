@@ -18,6 +18,9 @@ import ReactDOM from "react-dom";
 
 //ReactDOM.render(<App roll= {101} />,document.getElementById("root"));
 
-import Student from "./App";
+import App from "./App";
+//import Comp from "./comp";
 
-ReactDOM.render(<Student>I am children</Student>,document.getElementById("root"));
+ReactDOM.render(<App/>,document.getElementById("root"));
+//ReactDOM.render(<Comp/>,document.getElementById("app"));
+//ReactDOM.unmountComponentAtNode(document.getElementById("root"));
