@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZeeWee Cafe</title>
+    <link rel="stylesheet" type="text/css" href="./cafe.css">
+    <link rel="stylesheet" type="text/css" href="./filterstyle.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+        
+            <div id="logo_div">
+                    <img align="left" id="logo_img" src="./logo5.png" alt="Not found">
+                </div>
+                <div class="menu">
+                    <ul>
+                    <li><a href="cafe.html"+>Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="./cart.html">Your Cart</a></li>
+                    </ul>
+                </div>
+        </nav>
+        
+            <main>
+                <section>
+                        <h2 id="welcmH">Welcome To Coffee Shop</h2><br>
+                        <input type="text" placeholder="Search item"><br>
+                        <button id="search">Search</button>
+                </section>
+            </main>
+        
+        </header>
+        <a name="about"><div id="box">
+               <h1 style="font-size: 50px; ;">About Us</h1>
+        <div style="display: flex;">
+            <div>
+                <p id="aboutPara">When we inaugurated our bakery for the first time in our very own city Indore, in 1985, people did not have any understanding for cheese, cream cakes, pizza, burgers etc. but we took the liability to pioneer this fresh food into the town, which turned out to be a great accomplishment, which had not been achievable devoid of you people’s love and loyalty toward us.
+
+                 This website has been shaped so that we people can order cakes for their loved ones. You can share your incredibly valuable views on our bakery, and any kind of suggestions would be highly appreciated.</p>
+            </div>
+            <div id="imgdiv">
+                <img id="aboutimg" align="right" src="./about1.jpg">
+            </div>
+        </div>
+    </div></a>
+    <div id="menu">
+        <h1 id="menuHeading">Menu</h1>
+        <button id="search" onclick="all_items()">All</button>
+        <button id="search" onclick="cupcakes()">Cupcakes</button>
+        <button id="search" onclick="cakes()">Cakes</button>
+        <button id="search" onclick="juice()">Juice</button>
+        <button id="search" onclick="shakes()">Shakes</button>
+        <button id="search" onclick="sweets()">Sweets</button>
+        <button id="search" onclick="brownies()">Brownies</button>
+        <button id="search" onclick="hot_coffees()">Hot coffees</button>
+        <button id="search" onclick="cold_coffees()">Cold coffy</button>
+
+        <div id="items">
+
+                <div id="item1" class="item_img">
+                    <img id="hover1" src="./cupcake.jpg">
+                    <h1>Cupcakes  Rs.80/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item8" class="item_img">
+                    <img id="hover1" src="./cake.jpg"><br>
+                    <h1>Cake  Rs.450/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item2" class="item_img">
+                    <img id="hover1" src="./Sweets.webp">
+                    <h1>Sweets  Rs.500/kg</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item3" class="item_img">
+                    <img id="hover1" src="./shakes.jpg">
+                    <h1>Fruit Shakes  Rs.90/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item4" class="item_img">
+                    <img id="hover1" src="./juice.webp">
+                    <h1>Fruit Juice  Rs.60/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item5" class="item_img">
+                    <img id="hover1" src="./hot coffee.jpg">
+                    <h1>Hot Coffee  Rs.65/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item6" class="item_img">
+                    <img id="hover6" src="./cold coffee.jpg">
+                    <h1>Cold Coffee  Rs.85/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item7" class="item_img">
+                    <img id="hover1" src="./brownie.jpg">
+                    <h1>Chocolate Brownies  Rs.55/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item1" class="item_img">
+                    <img id="hover1" src="./cupcake.jpg">
+                    <h1>Cupcakes  Rs.80/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item6" class="item_img">
+                    <img id="hover1" src="./cold coffee.jpg">
+                    <h1>Cold Coffee  Rs.85/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item7" class="item_img">
+                    <img id="hover1" src="./brownie.jpg">
+                    <h1>Chocolate Brownies  Rs.55/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item5" class="item_img">
+                    <img id="hover1" src="./hot coffee.jpg">
+                    <h1>Hot Coffee  Rs.65/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+            </div>    
+            
+        </div>
+
+    </div>
+</body>
+<script src="./cafe.js"></script>
+</html>
