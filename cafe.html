@@ -25,15 +25,15 @@
                 </div>
         </nav>
         
-            <main>
-                <section>
+            <main id="main">
+                <section id="text">
                         <h2 id="welcmH">Welcome To Coffee Shop</h2><br>
-                        <input type="text" placeholder="Search item"><br>
-                        <button id="search">Search</button>
+                        <input value="" id="input" type="text" placeholder="Search item">
+                        <a href="#store"><button class="searchbar" id="search" onclick="searchContent();">Search</button></a>
                 </section>
             </main>
         
-        </header>
+        </header><br><br><br><br><br><br><br><br><br><br><br><br>
         <a name="about"><div id="box">
                <h1 style="font-size: 50px; ;">About Us</h1>
         <div style="display: flex;">
@@ -47,33 +47,35 @@
             </div>
         </div>
     </div></a>
-    <div id="menu">
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <a name="store"><div id="menu">
         <h1 id="menuHeading">Menu</h1>
         <button id="search" onclick="all_items()">All</button>
         <button id="search" onclick="cupcakes()">Cupcakes</button>
         <button id="search" onclick="cakes()">Cakes</button>
-        <button id="search" onclick="juice()">Juice</button>
         <button id="search" onclick="shakes()">Shakes</button>
-        <button id="search" onclick="sweets()">Sweets</button>
         <button id="search" onclick="brownies()">Brownies</button>
         <button id="search" onclick="hot_coffees()">Hot coffees</button>
-        <button id="search" onclick="cold_coffees()">Cold coffy</button>
+        <button id="search" onclick="cold_coffees()">Cold coffy</button><br><br><br>
+
+        <br><br><br>
 
         <div id="items">
 
                 <div id="item1" class="item_img">
                     <img id="hover1" src="./cupcake.jpg">
                     <h1>Cupcakes  Rs.80/-</h1>
-                    <button id="search">Add To Cart</button>
+                    <button id="search" onclick="add()">Add To Cart</button>
                 </div>
+                
                 <div id="item8" class="item_img">
                     <img id="hover1" src="./cake.jpg"><br>
-                    <h1>Cake  Rs.450/-</h1>
+                    <h1>RedValvet Cake  Rs.850/-</h1>
                     <button id="search">Add To Cart</button>
                 </div>
                 <div id="item2" class="item_img">
-                    <img id="hover1" src="./Sweets.webp">
-                    <h1>Sweets  Rs.500/kg</h1>
+                    <img id="hover1" src="./rasmalai.webp">
+                    <h1>rasmalai  Rs.500/kg</h1>
                     <button id="search">Add To Cart</button>
                 </div>
                 <div id="item3" class="item_img">
@@ -98,33 +100,116 @@
                 </div>
                 <div id="item7" class="item_img">
                     <img id="hover1" src="./brownie.jpg">
-                    <h1>Chocolate Brownies  Rs.55/-</h1>
-                    <button id="search">Add To Cart</button>
-                </div>
-                <div id="item1" class="item_img">
-                    <img id="hover1" src="./cupcake.jpg">
-                    <h1>Cupcakes  Rs.80/-</h1>
-                    <button id="search">Add To Cart</button>
-                </div>
-                <div id="item6" class="item_img">
-                    <img id="hover1" src="./cold coffee.jpg">
-                    <h1>Cold Coffee  Rs.85/-</h1>
+                    <h1>Brownies  Rs.55/-</h1>
                     <button id="search">Add To Cart</button>
                 </div>
                 <div id="item7" class="item_img">
-                    <img id="hover1" src="./brownie.jpg">
-                    <h1>Chocolate Brownies  Rs.55/-</h1>
+                    <img id="hover1" src="./brownie2.png">
+                    <h1>strawbarry Brownies  Rs.55/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item1" class="item_img">
+                    <img id="hover1" src="./cupcake2.jpg">
+                    <h1>Vanila Cupcakes  Rs.88/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item2" class="item_img">
+                    <img id="hover1" src="./gulabjamun.webp">
+                    <h1>gulab jamun  Rs.150/kg</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item3" class="item_img">
+                    <img id="hover1" src="./shake2.jpg">
+                    <h1>Fruit Shake  Rs.95/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item4" class="item_img">
+                    <img id="hover1" src="./juice2.jpg">
+                    <h1>strawbarry juice  Rs.88/-</h1>
                     <button id="search">Add To Cart</button>
                 </div>
                 <div id="item5" class="item_img">
-                    <img id="hover1" src="./hot coffee.jpg">
-                    <h1>Hot Coffee  Rs.65/-</h1>
+                    <img id="hover1" src="./hot coffee2.jpg">
+                    <h1>cappuccino  Rs.80/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item6" class="item_img">
+                    <img id="hover1" src="./cold coffee2.jpg">
+                    <h1>Cold Coffee Brownie   Rs.80/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item7" class="item_img">
+                    <img id="hover1" src="./brownie3.jpeg">
+                    <h1>Chocolate brownie  Rs.100/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item8" class="item_img">
+                    <img id="hover1" src="./cake2.jpg">
+                    <h1>Fruit cakes  Rs.550/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item1" class="item_img">
+                    <img id="hover1" src="./cupcake3.jpg">
+                    <h1> ChocoCupcakes  Rs.90/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item2" class="item_img">
+                    <img id="hover1" src="./kajukatli.jpg">
+                    <h1>kaju katli  Rs.850/kg</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item3" class="item_img">
+                    <img id="hover1" src="./shake3.jpg">
+                    <h1>pistachio shake  Rs.75/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item4" class="item_img">
+                    <img id="hover1" src="./jiuce3.jpg">
+                    <h1>mango juice  Rs.80/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item5" class="item_img">
+                    <img id="hover1" src="./coffee latte.jpg">
+                    <h1>Latte  Rs.95/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item6" class="item_img">
+                    <img id="hover1" src="./cold coffee3.jpg">
+                    <h1>Cold Coffee  Rs.85/-</h1>
+                    <button id="search">Add To Cart</button>
+                </div>
+                <div id="item8" class="item_img">
+                    <img id="hover1" src="./cake3.jpg">
+                    <h1>Chocolate Cake  Rs.500/-</h1>
                     <button id="search">Add To Cart</button>
                 </div>
             </div>    
             
-        </div>
+        </div></a>
 
+    </div><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <div class="contact">
+        <h1><i>Contact Us</i></h1><br><br>
+        
+     <div class="fristdiv">
+        <form> 
+    
+          <input type = "text" class="mytext" placeholder="Enter your name"replaced><br><br>
+          <input type = "email" class="myemail" placeholder="Enter your email"replaced><br><br>
+          <textarea class="massage"rows="30" cols="20" placeholder="Massage"></textarea><br>
+          <button type="button" align="center" class="mybtn"  >Send</button>
+         
+          
+        </form> 
+        <div class="image">
+            <img src="./img.jpeg.jpg">
+        </div>  
+    </div>
+    
+    
+    
     </div>
 </body>
 <script src="./cafe.js"></script>

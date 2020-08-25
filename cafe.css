@@ -8,40 +8,43 @@ img{
     transform:scale(1.2);
 }
 #menu{
-    background-color: rgb(245, 196, 241) ;
+    width:98.5%;
+    background-color:rgb(241, 241, 190);
     text-align: center;
+    padding: 10px;
+    padding-bottom: 70px;
+    padding-top: 100px;
 }
 #box{
-    background-color: rgb(208, 167, 247);
-    padding: 70px;
+    width:92.5%;
+    background-color: rgba(208, 167, 247, 0.651);
+    padding: 50px;
+    padding-bottom: 150px;
+    padding-top: 150px;
 }
     
 #aboutPara{
-    font-size: 20px; width:500px; 
+    font-size: 20px; 
+    width:60%; 
     margin-top: 10px; 
     line-height: 30px; 
     font-family: cursive; 
-    margin-right:100px;
+    font-weight: bold;
 }
 #imgdiv{
     border:10px solid #000; 
-    width:580px; 
+    width: 300%;
     height: 380px;
 }
 #aboutimg{
-    width:600px; 
-    height: 380px; 
-    margin-top:10px; 
-    margin-right: 10px;   
+    width: 105%; 
+    height: 400px;
+    margin-top:10px;   
 }
 #menuHeading{
     font-size: 60px; 
     text-align: center;
 }
-/*table{
-    width: 500px;
-    margin:auto;
-}*/
 button:hover{
     background-color:black;
     color:palevioletred;
@@ -50,12 +53,83 @@ button:hover{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 50px;
-    padding-bottom: 100px;
 }
 
 #cart{
 
     color: black;
     background-color: burlywood;
+}
+body{
+    background-image: url('./background1.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+.contact{
+    text-align:left;
+    background-color:rgb(200, 240, 255);
+    height: 550px;
+    font-size: 40px;
+    padding: 55px;
+    
+}
+
+.mytext{
+    text-align: center;
+    width:350px;
+    height:30px;
+     border-radius: 30px; 
+}
+.myemail{
+    text-align: center;
+    width:350px;
+    height:30px;
+     border-radius: 30px; 
+}
+.massage{
+    text-align: center;
+    width:350px;
+    height:90px; 
+      border-radius: 30px;  
+}
+.mybtn{
+    margin:auto;
+    padding: 2px;
+    background-color:white; 
+    width:100px;
+    height:30px;
+    border-radius:30px;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+    border:none;
+    
+}   
+   
+  .image 
+{   padding-top: 0px;
+    float: right;
+    padding-bottom: 10px;
+    width:450px;  
+    height:300px;
+    padding-top: 30px; 
+     padding-right: 30px; 
+    border: 20px solid black;
+}   
+
+.image img{
+    width:500px;
+    height:350px;
+}
+.fristdiv{
+    text-align: left;
+    display:flex;
+    margin-left:30px; 
+}
+form{
+    margin-right: 200px;
 }

@@ -1,20 +1,13 @@
-//let allItems=document.getElementById("items").innerHTML;
-//temp=allItems;
-//console.log(allItems);
+
 
 var allItems=document.querySelectorAll('.item_img');
-console.log(allItems);
 
 var len1=document.querySelectorAll('#item1');
-console.log(len1);
-
-test = () => {
-console.log(1);
-}
 
 cupcakes=()=>{
 
-    //console.log('cupcakes');
+    console.log("helloooo");
+
     num=len1.length;
     document.getElementById("items").innerHTML=null;
     for(i=0;i<num;i++)
@@ -26,7 +19,6 @@ cupcakes=()=>{
 all_items=()=>{
 
     let len=allItems.length;
-    console.log(len);
     num=len;
     document.getElementById("items").innerHTML=null;
     for(i=0;i<num;i++)
@@ -117,6 +109,44 @@ brownies=()=>{
     {
     document.getElementById("items").innerHTML+=`<div>${len8[i].innerHTML}</div>`;
     }
+}
+
+
+searchContent=()=>{
+
+    let Val=document.getElementById("input");
+    console.log(typeof Val.value);
+
+    if(Val.value=='cupcakes'||Val.value=='cupcake'){
+         cupcakes();
+    }
+    else if(Val.value=='brownies'||Val.value=='brownie'){
+         brownies();
+    }
+    else if(Val.value=='cakes'||Val.value=='cake'){
+         cakes();
+    }
+    else if(Val.value=='sweets'||Val.value=='sweet'){
+        sweets();
+    }
+    else if(Val.value=='cold coffee'||Val.value=='cold coffees'){
+        cold_coffees();
+    }
+    else if(Val.value=='hot coffee'||Val.value=='hot coffees'){
+        hot_coffees();
+    }
+    else if(Val.value=='juice'||Val.value=='fruit juice'){
+        juice();
+    }
+    else if(Val.value=='shakes'||Val.value=='fruit shake'){
+        shakes();
+   }
+
+}
+
+add=()=>{
+ 
+    
 }
 
 
